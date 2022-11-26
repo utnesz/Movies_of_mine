@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { MoviesService } from './../../service/movies.service';
+import { Component, OnInit, Output } from '@angular/core';
+import { Movies } from '../movies';
+
 
 @Component({
   selector: 'app-home',
@@ -6,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  @Output() movies$: Movies[] = [];
 
-  constructor() { }
+  constructor(public moviesService: MoviesService) { }
 
   ngOnInit(): void {
+    this.moviesService.getAll();
   }
 
 }

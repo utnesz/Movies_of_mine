@@ -1,0 +1,484 @@
+{
+  "movies": [
+    {
+      "id": 0,
+      "movie_title": "Hard Rain",
+      "movie_genres": "Action|Crime|Thriller",
+      "release_year": 2003,
+      "seen": false,
+      "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/19703_15.jpg"
+    },
+    {
+      "id": 1,
+      "movie_title": "Stuart Little 3: Call of the Wild",
+      "movie_genres": "Animation|Children|Comedy|Fantasy",
+      "release_year": 2000,
+      "seen": false,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/4/4c/Stuart_Little_3_Call_of_the_Wild_poster.jpg"
+    },
+    {
+      "id": 2,
+      "movie_title": "Final Cut, The",
+      "movie_genres": "Action|Drama|Thriller",
+      "release_year": 1990,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMjkxNjA4NjM0M15BMl5BanBnXkFtZTcwMTU3MDcyMQ@@._V1_.jpg"
+    },
+    {
+      "id": 3,
+      "movie_title": "Celtic Pride",
+      "movie_genres": "Comedy",
+      "release_year": 2003,
+      "seen": false,
+      "img_src": "https://i0.wp.com/saltcityhoops.com/wp-content/uploads/2013/08/600full-celtic-pride-poster.jpg"
+    },
+    {
+      "id": 4,
+      "movie_title": "Green Zone",
+      "movie_genres": "Action|Drama|Thriller|War",
+      "release_year": 2006,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTYzMTA1NDMyNV5BMl5BanBnXkFtZTcwMzUwODY5Mg@@._V1_.jpg"
+    },
+    {
+      "id": 5,
+      "movie_title": "Babette Goes to War",
+      "movie_genres": "Comedy|War",
+      "release_year": 1984,
+      "seen": false,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/2/26/Babette-goes-to-war-movie-poster-1960.jpg"
+    },
+    {
+      "id": 6,
+      "movie_title": "Haunting, The",
+      "movie_genres": "Horror|Thriller",
+      "release_year": 1996,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/I/51aYQx70GGL._AC_SY580_.jpg"
+    },
+    {
+      "id": 7,
+      "movie_title": "Time Lapse",
+      "movie_genres": "Crime|Drama|Sci-Fi|Thriller",
+      "release_year": 2012,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTcyNTYyMDAyM15BMl5BanBnXkFtZTgwMjg3MjMwMjE@._V1_.jpg"
+    },
+    {
+      "id": 8,
+      "movie_title": "Nights in Rodanthe",
+      "movie_genres": "Drama|Romance",
+      "release_year": 2001,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTI2MDA0MTI0Ml5BMl5BanBnXkFtZTcwMDkzNDMwMg@@._V1_.jpg"
+    },
+    {
+      "id": 9,
+      "movie_title": "Burglars, The (Le casse)",
+      "movie_genres": "Action|Crime|Thriller",
+      "release_year": 1997,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZDQ4YWIzZDUtNTljOS00NTNiLTlkNmYtYzIyNzkzYmU4NDY3XkEyXkFqcGdeQXVyNjUyMTgxNjA@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 10,
+      "movie_title": "Dead & Buried",
+      "movie_genres": "Horror",
+      "release_year": 2008,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZWY5MGU3ODMtYzUxNi00ZDYxLWEzYjQtMWFjYTg4MDZmZmQwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+    },
+    {
+      "id": 11,
+      "movie_title": "Vital Signs",
+      "movie_genres": "Drama",
+      "release_year": 2008,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZjNmMTMyNWQtMTZhOC00M2Y0LWE5YTMtODM4MzMwZmJmZjlkXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_.jpg"
+    },
+    {
+      "id": 12,
+      "movie_title": "Monga",
+      "movie_genres": "Crime|Drama",
+      "release_year": 2007,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BYWQ3MjliZDUtNmVjOS00NzVjLWI2MzMtNjc5NjVlNGQ0NzFkXkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_.jpg"
+    },
+    {
+      "id": 13,
+      "movie_title": "Winnie the Pooh",
+      "movie_genres": "Animation|Children|Comedy",
+      "release_year": 2010,
+      "seen": true,
+      "img_src": "https://lumiere-a.akamaihd.net/v1/images/p_themanyadventuresofwinniethepooh_19638_d29df8cf.jpeg"
+    },
+    {
+      "id": 14,
+      "movie_title": "Taxi!",
+      "movie_genres": "Crime|Drama|Romance",
+      "release_year": 1995,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BODFmMWY3ZWQtMTBhNy00MzE4LWIxODYtNTFmMzczMzY1YmNjXkEyXkFqcGdeQXVyMjMwNDgzNjc@._V1_.jpg"
+    },
+    {
+      "id": 15,
+      "movie_title": "Microphone",
+      "movie_genres": "Comedy|Drama|Musical",
+      "release_year": 2012,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMjIxMDc4MzQ0NF5BMl5BanBnXkFtZTcwNzczNTg3Mw@@._V1_.jpg"
+    },
+    {
+      "id": 16,
+      "movie_title": "Grocer's Son, The (Fils de l'épicier, Le)",
+      "movie_genres": "Drama|Romance",
+      "release_year": 1989,
+      "seen": false,
+      "img_src": "https://s3.amazonaws.com/static.rogerebert.com/uploads/movie/movie_poster/the-grocers-son-2008/large_6xQf6gxMqrKeLR6jENb9r2fGZgG.jpg"
+    },
+    {
+      "id": 17,
+      "movie_title": "Touching the Void",
+      "movie_genres": "Adventure|Documentary",
+      "release_year": 1980,
+      "seen": true,
+      "img_src": "https://art-s.nflximg.net/c662a/5ed4182473330e5437730907ba44fe9e5d6c662a.jpg"
+    },
+    {
+      "id": 18,
+      "movie_title": "Liliom",
+      "movie_genres": "Drama|Fantasy",
+      "release_year": 2006,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BNzM2ZDJmMDEtY2I5Ny00MWRiLWJjNjAtNWRiN2Y0MDk0NzJlXkEyXkFqcGdeQXVyMTk2MzI2Ng@@._V1_.jpg"
+    },
+    {
+      "id": 19,
+      "movie_title": "Day of the Jackal, The",
+      "movie_genres": "Crime|Thriller",
+      "release_year": 1996,
+      "seen": false,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/3/31/Day_of_the_Jackal_1973_Poster.jpg"
+    },
+    {
+      "id": 20,
+      "movie_title": "Circle of Iron",
+      "movie_genres": "Action|Adventure|Fantasy|Mystery",
+      "release_year": 2011,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTMxMTA1MDgwNl5BMl5BanBnXkFtZTcwODg2OTQ1MQ@@._V1_.jpg"
+    },
+    {
+      "id": 21,
+      "movie_title": "Babel",
+      "movie_genres": "Drama|Thriller",
+      "release_year": 2005,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BYTJkZDljNGYtNjRiNC00ZmY2LTg1NmItYTI1MTllNDQzMWVmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 22,
+      "movie_title": "Emergency Squad",
+      "movie_genres": "Action|Thriller",
+      "release_year": 1993,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTU1NTczNzUyOV5BMl5BanBnXkFtZTcwMzQyOTYzMQ@@._V1_.jpg"
+    },
+    {
+      "id": 23,
+      "movie_title": "League of Extraordinary Gentlemen, The (a.k.a. LXG)",
+      "movie_genres": "Action|Fantasy|Sci-Fi",
+      "release_year": 1993,
+      "seen": false,
+      "img_src": "https://images.moviesanywhere.com/12e59373e9c64d336aabc2ce51036ac6/a35b3a16-44e1-4853-a89a-efbca189c701.jpg"
+    },
+    {
+      "id": 24,
+      "movie_title": "Mother Küsters Goes to Heaven (Mutter Küsters' Fahrt zum Himmel)",
+      "movie_genres": "Drama",
+      "release_year": 2011,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/S/pv-target-images/7a7deba7bbec79f24f57a417882125a5c22135a044cf1e4b235c9b7ad1ff498f.png"
+    },
+    {
+      "id": 25,
+      "movie_title": "Lifeguard, The",
+      "movie_genres": "Comedy|Drama",
+      "release_year": 2008,
+      "seen": true,
+      "img_src": "https://flxt.tmsimg.com/assets/p9721489_p_v8_ah.jpg"
+    },
+    {
+      "id": 26,
+      "movie_title": "A Merry Friggin' Christmas",
+      "movie_genres": "Comedy",
+      "release_year": 1993,
+      "seen": true,
+      "img_src": "https://flxt.tmsimg.com/assets/p11107522_p_v8_ac.jpg"
+    },
+    {
+      "id": 27,
+      "movie_title": "Them!",
+      "movie_genres": "Horror|Sci-Fi|Thriller",
+      "release_year": 1998,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BOTk3MjlhNDAtMmFkMC00MGJjLWI3OWUtNGQ3NTYwMmM3ZGQ1XkEyXkFqcGdeQXVyNDY2MTk1ODk@._V1_.jpg"
+    },
+    {
+      "id": 28,
+      "movie_title": "Darker Than Night",
+      "movie_genres": "Horror|Thriller",
+      "release_year": 2007,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTc2Mzg1NTA4NV5BMl5BanBnXkFtZTgwNjY4MTM1MjE@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 29,
+      "movie_title": "Krull",
+      "movie_genres": "Action|Adventure|Fantasy|Sci-Fi",
+      "release_year": 2010,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTcxNDYxNjY3NV5BMl5BanBnXkFtZTYwMjc1ODg4._V1_.jpg"
+    },
+    {
+      "id": 30,
+      "movie_title": "Mimic: Sentinel",
+      "movie_genres": "Horror|Sci-Fi|Thriller",
+      "release_year": 1993,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTIwMDk3ODM1NF5BMl5BanBnXkFtZTcwOTU4OTUyMQ@@._V1_.jpg"
+    },
+    {
+      "id": 31,
+      "movie_title": "Children of the Corn III",
+      "movie_genres": "Horror",
+      "release_year": 2012,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BNTkzNmMzNmMtZDQ0Ny00YjMwLWE1ZWMtNzI2ZmQzMmJkZGVhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 32,
+      "movie_title": "Chico & Rita",
+      "movie_genres": "Animation|Musical|Romance",
+      "release_year": 2004,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BODA0NjQ2NzgtZjQzMC00NGI1LWI5ZTctNWEyNDk3NDdlNmU2XkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_.jpg"
+    },
+    {
+      "id": 33,
+      "movie_title": "Star of Midnight",
+      "movie_genres": "Comedy|Mystery|Romance",
+      "release_year": 1994,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BNzYzNjMxMzY1MV5BMl5BanBnXkFtZTgwOTA2NTAwMjE@._V1_.jpg"
+    },
+    {
+      "id": 34,
+      "movie_title": "¡Qué hacer!",
+      "movie_genres": "Drama",
+      "release_year": 2005,
+      "seen": true,
+      "img_src": "https://es.web.img3.acsta.net/medias/nmedia/18/89/99/93/20076363.jpg"
+    },
+    {
+      "id": 35,
+      "movie_title": "Just a Kiss",
+      "movie_genres": "Comedy|Romance",
+      "release_year": 2001,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMWVlZWIxYjAtNDhiZC00N2M4LTkxZjgtZmNhYmVjYWMyNjgwXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 36,
+      "movie_title": "Serenity",
+      "movie_genres": "Action|Fantasy|Sci-Fi",
+      "release_year": 2005,
+      "seen": false,
+      "img_src": "https://flxt.tmsimg.com/assets/p89596_p_v11_ag.jpg"
+    },
+    {
+      "id": 37,
+      "movie_title": "Benji: Off the Leash!",
+      "movie_genres": "Children|Drama",
+      "release_year": 2004,
+      "seen": true,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Benji_Off_the_Leash.jpg/220px-Benji_Off_the_Leash.jpg"
+    },
+    {
+      "id": 38,
+      "movie_title": "I've Loved You So Long (Il y a longtemps que je t'aime)",
+      "movie_genres": "Drama|Mystery",
+      "release_year": 1997,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTY1Njg2ODI1Ml5BMl5BanBnXkFtZTcwMzkzNzQ5MQ@@._V1_.jpg"
+    },
+    {
+      "id": 39,
+      "movie_title": "Midnight Express",
+      "movie_genres": "Drama",
+      "release_year": 2005,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTU4MTc1Nzg4MV5BMl5BanBnXkFtZTYwOTQ4MDk4._V1_.jpg"
+    },
+    {
+      "id": 40,
+      "movie_title": "Crisis: Behind a Presidential Commitment",
+      "movie_genres": "Documentary",
+      "release_year": 1999,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTUyMDI1MzAyN15BMl5BanBnXkFtZTcwNDg2NDQyMQ@@._V1_.jpg"
+    },
+    {
+      "id": 41,
+      "movie_title": "Sweet Home Alabama",
+      "movie_genres": "Comedy|Romance",
+      "release_year": 2010,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMjEwMjIwMDQ4OV5BMl5BanBnXkFtZTYwNzc3OTY3._V1_.jpg"
+    },
+    {
+      "id": 42,
+      "movie_title": "Porgy and Bess",
+      "movie_genres": "Drama|Musical|Romance",
+      "release_year": 2010,
+      "seen": true,
+      "img_src": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Porgy_and_Bess_%281959_film_poster%29.jpg"
+    },
+    {
+      "id": 43,
+      "movie_title": "Alcan Highway (Alaska Highway)",
+      "movie_genres": "Documentary",
+      "release_year": 1992,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZGJjMzVlYTAtMDhhYi00M2Q4LWFkOTUtZGNlM2FkMmUwNmQzXkEyXkFqcGdeQXVyMDI2NDg0NQ@@._V1_.jpg"
+    },
+    {
+      "id": 44,
+      "movie_title": "Malaya",
+      "movie_genres": "Adventure|Drama",
+      "release_year": 2007,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZGFiMWNiMjYtMTA5NC00OWY1LTg4MTItYjU2ODRmNmY4NTU5XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg"
+    },
+    {
+      "id": 45,
+      "movie_title": "Sword of the Beast (Kedamono no ken)",
+      "movie_genres": "Action|Drama",
+      "release_year": 2008,
+      "seen": false,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/a/aa/Swordofthebeastdvdcover.jpg"
+    },
+    {
+      "id": 46,
+      "movie_title": "America Before Columbus",
+      "movie_genres": "Documentary",
+      "release_year": 1992,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BOGMwOWM0NjUtMGY4Zi00ZGE0LTlmZmEtNWIwNDYzNTUxYThhL2ltYWdlXkEyXkFqcGdeQXVyNjg1ODkwMDg@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 47,
+      "movie_title": "View from the Top, A",
+      "movie_genres": "Comedy|Romance",
+      "release_year": 2009,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTg2MTk2MzkxNF5BMl5BanBnXkFtZTYwNjg0NTk5._V1_.jpg"
+    },
+    {
+      "id": 48,
+      "movie_title": "Mummy, The",
+      "movie_genres": "Action|Adventure|Comedy|Fantasy|Horror|Thriller",
+      "release_year": 2011,
+      "seen": true,
+      "img_src": "https://flxt.tmsimg.com/assets/p23111_p_v8_ay.jpg"
+    },
+    {
+      "id": 49,
+      "movie_title": "Dr Money and the Boy with No Penis",
+      "movie_genres": "Documentary",
+      "release_year": 1997,
+      "seen": true,
+      "img_src": "https://external-preview.redd.it/YaRWczzwi8DJZGHec5XoYXa7NsHIW7ujQyj0dslvLWo.jpg?auto=webp&s=44dbcd68cfb04372e092d506751fa24d942034a5"
+    },
+    {
+      "id": 50,
+      "movie_title": "All at Sea",
+      "movie_genres": "Comedy",
+      "release_year": 1998,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BYzg5NTk2MjMtMDhjNy00YWMwLWIxZTQtY2Y3ZTgwMGJkMGNmXkEyXkFqcGdeQXVyMTY1MzQyNDk@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 51,
+      "movie_title": "Full Metal Jacket",
+      "movie_genres": "Drama|War",
+      "release_year": 2004,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BNzkxODk0NjEtYjc4Mi00ZDI0LTgyYjEtYzc1NDkxY2YzYTgyXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+    },
+    {
+      "id": 52,
+      "movie_title": "One Strange Rock",
+      "movie_genres": "Documentary",
+      "release_year": 1990,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMzBlYjhmYTMtNzY1ZS00ZGU2LWFmMzktYTg5ZGU1N2JlMGRmXkEyXkFqcGdeQXVyMTg3MDg4NzM@._V1_FMjpg_UX1000_.jpgf"
+    },
+    {
+      "id": 53,
+      "movie_title": "Funny Face",
+      "movie_genres": "Comedy|Musical",
+      "release_year": 1994,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BNGY0YzA2OWQtOGMwZi00MzI2LWE4MzgtY2QzOTk1ODBhYjA3XkEyXkFqcGdeQXVyMjIyNjE2NA@@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 54,
+      "movie_title": "Fantastic Fungi",
+      "movie_genres": "Documentary",
+      "release_year": 2004,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BYmVhZGYwNjgtMzMzYi00ZDAwLTk5YmYtMzVhZDVjMjhiOWQyXkEyXkFqcGdeQXVyMTc3MTI1NzE@._V1_.jpg"
+    },
+    {
+      "id": 55,
+      "movie_title": "Satan's Sword 3: The Final Chapter (Daibosatsu toge: Kanketsu-hen)",
+      "movie_genres": "Action|Drama",
+      "release_year": 1988,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZWM5ODBmYjAtOGM0Ni00ZDBmLTg2ZTYtODMyMjA1MTA4ZDZiXkEyXkFqcGdeQXVyMzU0NzkwMDg@._V1_.jpg"
+    },
+    {
+      "id": 56,
+      "movie_title": "Juror, The",
+      "movie_genres": "Drama|Thriller",
+      "release_year": 1985,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BYWZlNGEzNjUtZGRiZi00ZWMxLWJiMjAtN2E1OWI3MTM4MjdjXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 57,
+      "movie_title": "Birdwatchers (BirdWatchers - La terra degli uomini rossi)",
+      "movie_genres": "Drama",
+      "release_year": 2006,
+      "seen": true,
+      "img_src": "https://imusic.b-cdn.net/images/item/original/303/5021866471303.jpg?movie-2010-birdwatchers-dvd&class=scaled"
+    },
+    {
+      "id": 58,
+      "movie_title": "Gay Purr-ee",
+      "movie_genres": "Animation|Children|Musical",
+      "release_year": 2003,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/I/81bJD426s9L._RI_.jpg"
+    },
+    {
+      "id": 59,
+      "movie_title": "Shrek Forever After (a.k.a. Shrek: The Final Chapter)",
+      "movie_genres": "Adventure|Animation|Children|Comedy|Fantasy|IMAX",
+      "release_year": 2006,
+      "seen": false,
+      "img_src": "https://www.elozetes.hu/img2/original/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg"
+    }
+  ]
+}

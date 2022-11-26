@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "site": "movies-d5240",
+    "public": "egyeni-angular-projetk-utnesz",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+<div class="row col-12 d-flex justify-content-evenly bg-light">
+  <div
+    *ngFor="let movie of movies$ | async"
+    class="card col-sm-5 col-lg-3 p-0 border-1 m-4"
+    style="width: 18rem"
+  >
+    <img src="{{ movie.img_src }}" class="card-img-top" alt="..." />
+    <div class="card-body row d-flex justify-content-end">
+      <h5 class="card-title">{{ movie.movie_title }}</h5>
+      <p class="card-text">{{ movie.movie_genres }}</p>
+      <p>Release year: {{ movie.release_year }}</p>
+      <h5 *ngIf="movie.seen" class="mr-auto">
+        <span class="badge rounded text-bg-success justify-content-start align-items-end">Seen!</span>
+      </h5>
+      <div class="container d-flex justify-content-end pt-auto px-1">
+        <a routerLink="/editor" class="btn btn-warning m-1 mt-auto">Edit</a>
+        <a (click)="onDelete(movie)" class="btn btn-danger m-1 mt-auto">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
