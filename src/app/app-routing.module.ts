@@ -16,7 +16,7 @@ const routes: Routes = [
   {
     path: 'editor/:id',
     component: MoivesEditorComponent,
-  },
+  }
 ];
 
 @NgModule({

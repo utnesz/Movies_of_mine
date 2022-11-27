@@ -1,8 +1,8 @@
 {
   "movies": [
     {
-      "id": 0,
-      "movie_title": "Hard Rain",
+      "id": 1,
+      "movie_title": "Hard Rainasd",
       "movie_genres": "Action|Crime|Thriller",
       "release_year": 2003,
       "seen": false,
@@ -23,14 +23,6 @@
       "release_year": 2006,
       "seen": "trua",
       "img_src": "https://m.media-amazon.com/images/M/MV5BMTYzMTA1NDMyNV5BMl5BanBnXkFtZTcwMzUwODY5Mg@@._V1_.jpg"
-    },
-    {
-      "id": 6,
-      "movie_title": "Haunting, The",
-      "movie_genres": "Horror|Thriller",
-      "release_year": 1996,
-      "seen": true,
-      "img_src": "https://m.media-amazon.com/images/I/51aYQx70GGL._AC_SY580_.jpg"
     },
     {
       "id": 7,
@@ -423,6 +415,22 @@
       "release_year": 2006,
       "seen": false,
       "img_src": "https://www.elozetes.hu/img2/original/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg"
+    },
+    {
+      "id": 60,
+      "movie_title": "asd",
+      "movie_genres": "asd",
+      "release_year": "1999",
+      "seen": true,
+      "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+    },
+    {
+      "id": 61,
+      "movie_title": "Indul a bakterház",
+      "movie_genres": "Comedy",
+      "release_year": "1978",
+      "seen": true,
+      "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
     }
   ]
 }

@@ -1,7 +1,6 @@
 <div class="row">
-  <div *ngIf="movies$ | async as movie" class="col-6 offset-3">
-    <form #moviesForm="ngForm" (ngSubmit)="onUpdate(moviesForm)">
-
+  <div class="col-6 offset-3">
+    <form #moviesForm="ngForm" (ngSubmit)="onUpdate(movie)">
       <div class="form-group my-3">
         <label class="my-2" for="">Movie title:</label>
         <input
@@ -12,7 +11,10 @@
           pattern=".{1,40}"
           required
         />
-        <div class="error-message text-danger" *ngIf="moviesForm.controls['title']?.invalid" >
+        <div
+          class="error-message text-danger"
+          *ngIf="moviesForm.controls['title']?.invalid"
+        >
           Movie title is required and must be between 8 and 40 characters!
         </div>
       </div>
@@ -28,7 +30,10 @@
           required
         />
       </div>
-     <div [hidden]="moviesForm.controls['genres']?.valid" class="error-message text-danger">
+      <div
+        [hidden]="moviesForm.controls['genres']?.valid"
+        class="error-message text-danger"
+      >
         Genres is required and must be minimum 3 characters!
       </div>
 
@@ -43,7 +48,10 @@
           required
         />
       </div>
-      <div [hidden]="moviesForm.controls['year']?.valid" class="error-message text-danger">
+      <div
+        [hidden]="moviesForm.controls['year']?.valid"
+        class="error-message text-danger"
+      >
         Release year is required and it has to be 4 numbers.
       </div>
 
@@ -58,7 +66,10 @@
           required
         />
       </div>
-      <div [hidden]="moviesForm.controls['seen']?.valid" class="error-message text-danger">
+      <div
+        [hidden]="moviesForm.controls['seen']?.valid"
+        class="error-message text-danger"
+      >
         Answer is required, it has to be 'true' or 'false'!
       </div>
       <div class="form-group my-3">
@@ -71,7 +82,10 @@
           required
         />
       </div>
-      <div [hidden]="moviesForm.controls['img url']?.valid" class="error-message text-danger">
+      <div
+        [hidden]="moviesForm.controls['img url']?.valid"
+        class="error-message text-danger"
+      >
         Image url is required!
       </div>
 
@@ -79,7 +93,7 @@
         type="submit"
         class="btn btn-primary btn-block btn-lg mt-3"
       >
-Save
+        Save
       </button>
     </form>
   </div>
