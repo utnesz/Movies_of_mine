@@ -1,7 +1,14 @@
-<div class="row col-12 d-flex justify-content-evenly bg-light">
+
+<div class="container col-12 mx-auto bg-light m-2 row">
+
+  <h5 class="m-3">Filters:  </h5>
+  <button routerLink="/editor"class="btn btn-success col-6 mx-auto my-2">Add new movie!</button>
+</div>
+
+<div class="row col-12 d-flex justify-content-evenly bg-light mx-auto">
   <div
     *ngFor="let movie of movies$ | async"
-    class="card col-sm-5 col-lg-3 p-0 border-1 m-4"
+    class="card col-sm-5 col-lg-3 p-0 border-1 m-2"
     style="width: 18rem"
   >
     <img src="{{ movie.img_src }}" class="card-img-top" alt="..." />
@@ -13,8 +20,8 @@
         <span class="badge rounded text-bg-success justify-content-start align-items-end">Seen!</span>
       </h5>
       <div class="container d-flex justify-content-end pt-auto px-1">
-        <a routerLink="/editor" class="btn btn-warning m-1 mt-auto">Edit</a>
-        <a (click)="onDelete(movie)" class="btn btn-danger m-1 mt-auto">Delete</a>
+        <button [routerLink]="['/editor/' + movie.id]" class="btn btn-warning m-1 mt-auto">Edit</button>
+        <button (click)="onDelete(movie)" class="btn btn-danger m-1 mt-auto">Delete</button>
       </div>
     </div>
   </div>

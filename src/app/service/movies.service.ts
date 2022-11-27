@@ -18,8 +18,8 @@ export class MoviesService {
     return this.http.get<Movies[]>(`${this.apiUrl}`);
   }
 
-  get(movie: Movies): Observable<Movies> {
-    let url = `${environment.apiUrl}/${movie.id}`;
+  get(id: number): Observable<Movies> {
+    let url = `${environment.apiUrl}/${id}`;
     return this.http.get<Movies>(url);
   }
 

@@ -9,16 +9,8 @@
       "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/19703_15.jpg"
     },
     {
-      "id": 1,
-      "movie_title": "Stuart Little 3: Call of the Wild",
-      "movie_genres": "Animation|Children|Comedy|Fantasy",
-      "release_year": 2000,
-      "seen": false,
-      "img_src": "https://upload.wikimedia.org/wikipedia/en/4/4c/Stuart_Little_3_Call_of_the_Wild_poster.jpg"
-    },
-    {
       "id": 2,
-      "movie_title": "Final Cut, The",
+      "movie_title": "Final C",
       "movie_genres": "Action|Drama|Thriller",
       "release_year": 1990,
       "seen": false,
@@ -71,14 +63,6 @@
       "release_year": 1997,
       "seen": false,
       "img_src": "https://m.media-amazon.com/images/M/MV5BZDQ4YWIzZDUtNTljOS00NTNiLTlkNmYtYzIyNzkzYmU4NDY3XkEyXkFqcGdeQXVyNjUyMTgxNjA@._V1_FMjpg_UX1000_.jpg"
-    },
-    {
-      "id": 11,
-      "movie_title": "Vital Signs",
-      "movie_genres": "Drama",
-      "release_year": 2008,
-      "seen": false,
-      "img_src": "https://m.media-amazon.com/images/M/MV5BZjNmMTMyNWQtMTZhOC00M2Y0LWE5YTMtODM4MzMwZmJmZjlkXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_.jpg"
     },
     {
       "id": 12,
@@ -135,14 +119,6 @@
       "release_year": 2006,
       "seen": false,
       "img_src": "https://m.media-amazon.com/images/M/MV5BNzM2ZDJmMDEtY2I5Ny00MWRiLWJjNjAtNWRiN2Y0MDk0NzJlXkEyXkFqcGdeQXVyMTk2MzI2Ng@@._V1_.jpg"
-    },
-    {
-      "id": 19,
-      "movie_title": "Day of the Jackal, The",
-      "movie_genres": "Crime|Thriller",
-      "release_year": 1996,
-      "seen": false,
-      "img_src": "https://upload.wikimedia.org/wikipedia/en/3/31/Day_of_the_Jackal_1973_Poster.jpg"
     },
     {
       "id": 20,
@@ -303,14 +279,6 @@
       "release_year": 2005,
       "seen": false,
       "img_src": "https://m.media-amazon.com/images/M/MV5BMTU4MTc1Nzg4MV5BMl5BanBnXkFtZTYwOTQ4MDk4._V1_.jpg"
-    },
-    {
-      "id": 40,
-      "movie_title": "Crisis: Behind a Presidential Commitment",
-      "movie_genres": "Documentary",
-      "release_year": 1999,
-      "seen": false,
-      "img_src": "https://m.media-amazon.com/images/M/MV5BMTUyMDI1MzAyN15BMl5BanBnXkFtZTcwNDg2NDQyMQ@@._V1_.jpg"
     },
     {
       "id": 41,
