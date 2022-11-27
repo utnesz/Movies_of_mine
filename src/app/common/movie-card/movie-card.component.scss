@@ -1,3 +1,9 @@
 .card-img-top {
+  height: 50%;
+  object-fit: cover;
+}
+
+.card-img-top:hover {
   height: 60%;
+  object-fit:contain;
 }

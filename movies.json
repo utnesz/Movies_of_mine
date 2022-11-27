@@ -2,27 +2,51 @@
   "movies": [
     {
       "id": 1,
-      "movie_title": "Hard Rainasd",
-      "movie_genres": "Action|Crime|Thriller",
-      "release_year": 2003,
+      "movie_title": "Stuart Little 3: Call of the Wild",
+      "movie_genres": "Animation|Children|Comedy|Fantasy",
+      "release_year": 2000,
       "seen": false,
-      "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/19703_15.jpg"
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/4/4c/Stuart_Little_3_Call_of_the_Wild_poster.jpg"
     },
     {
       "id": 2,
-      "movie_title": "Final C",
+      "movie_title": "Final Cut, The",
       "movie_genres": "Action|Drama|Thriller",
-      "release_year": "1990",
-      "seen": "true",
+      "release_year": 1990,
+      "seen": false,
       "img_src": "https://m.media-amazon.com/images/M/MV5BMjkxNjA4NjM0M15BMl5BanBnXkFtZTcwMTU3MDcyMQ@@._V1_.jpg"
+    },
+    {
+      "id": 3,
+      "movie_title": "Celtic Pride",
+      "movie_genres": "Comedy",
+      "release_year": 2003,
+      "seen": false,
+      "img_src": "https://i0.wp.com/saltcityhoops.com/wp-content/uploads/2013/08/600full-celtic-pride-poster.jpg"
     },
     {
       "id": 4,
       "movie_title": "Green Zone",
       "movie_genres": "Action|Drama|Thriller|War",
       "release_year": 2006,
-      "seen": "trua",
+      "seen": true,
       "img_src": "https://m.media-amazon.com/images/M/MV5BMTYzMTA1NDMyNV5BMl5BanBnXkFtZTcwMzUwODY5Mg@@._V1_.jpg"
+    },
+    {
+      "id": 5,
+      "movie_title": "Babette Goes to War",
+      "movie_genres": "Comedy|War",
+      "release_year": 1984,
+      "seen": false,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/2/26/Babette-goes-to-war-movie-poster-1960.jpg"
+    },
+    {
+      "id": 6,
+      "movie_title": "Haunting, The",
+      "movie_genres": "Horror|Thriller",
+      "release_year": 1996,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/I/51aYQx70GGL._AC_SY580_.jpg"
     },
     {
       "id": 7,
@@ -47,6 +71,22 @@
       "release_year": 1997,
       "seen": false,
       "img_src": "https://m.media-amazon.com/images/M/MV5BZDQ4YWIzZDUtNTljOS00NTNiLTlkNmYtYzIyNzkzYmU4NDY3XkEyXkFqcGdeQXVyNjUyMTgxNjA@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+      "id": 10,
+      "movie_title": "Dead & Buried",
+      "movie_genres": "Horror",
+      "release_year": 2008,
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZWY5MGU3ODMtYzUxNi00ZDYxLWEzYjQtMWFjYTg4MDZmZmQwXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+    },
+    {
+      "id": 11,
+      "movie_title": "Vital Signs",
+      "movie_genres": "Drama",
+      "release_year": 2008,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BZjNmMTMyNWQtMTZhOC00M2Y0LWE5YTMtODM4MzMwZmJmZjlkXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_.jpg"
     },
     {
       "id": 12,
@@ -103,6 +143,14 @@
       "release_year": 2006,
       "seen": false,
       "img_src": "https://m.media-amazon.com/images/M/MV5BNzM2ZDJmMDEtY2I5Ny00MWRiLWJjNjAtNWRiN2Y0MDk0NzJlXkEyXkFqcGdeQXVyMTk2MzI2Ng@@._V1_.jpg"
+    },
+    {
+      "id": 19,
+      "movie_title": "Day of the Jackal, The",
+      "movie_genres": "Crime|Thriller",
+      "release_year": 1996,
+      "seen": false,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/3/31/Day_of_the_Jackal_1973_Poster.jpg"
     },
     {
       "id": 20,
@@ -265,6 +313,14 @@
       "img_src": "https://m.media-amazon.com/images/M/MV5BMTU4MTc1Nzg4MV5BMl5BanBnXkFtZTYwOTQ4MDk4._V1_.jpg"
     },
     {
+      "id": 40,
+      "movie_title": "Crisis: Behind a Presidential Commitment",
+      "movie_genres": "Documentary",
+      "release_year": 1999,
+      "seen": false,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTUyMDI1MzAyN15BMl5BanBnXkFtZTcwNDg2NDQyMQ@@._V1_.jpg"
+    },
+    {
       "id": 41,
       "movie_title": "Sweet Home Alabama",
       "movie_genres": "Comedy|Romance",
@@ -417,19 +473,27 @@
       "img_src": "https://www.elozetes.hu/img2/original/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg"
     },
     {
-      "id": 60,
-      "movie_title": "asd",
-      "movie_genres": "asd",
-      "release_year": "1999",
-      "seen": true,
-      "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+      "id": 61,
+      "movie_title": "Hard Rain",
+      "movie_genres": "Action|Crime|Thriller",
+      "release_year": 2003,
+      "seen": false,
+      "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/19703_15.jpg"
     },
     {
-      "id": 61,
-      "movie_title": "Indul a bakterház",
+      "id": 62,
+      "movie_title": "Indul a Bakterház",
       "movie_genres": "Comedy",
-      "release_year": "1978",
-      "seen": true,
+      "release_year": 1980,
+      "seen": false,
+      "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/21265_52.jpg"
+    },
+    {
+      "id": 63,
+      "movie_title": "asdf",
+      "movie_genres": "sdfg",
+      "release_year": "1222",
+      "seen": "false",
       "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
     }
   ]

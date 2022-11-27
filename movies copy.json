@@ -1,14 +1,6 @@
 {
   "movies": [
     {
-      "id": 0,
-      "movie_title": "Hard Rain",
-      "movie_genres": "Action|Crime|Thriller",
-      "release_year": 2003,
-      "seen": false,
-      "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/19703_15.jpg"
-    },
-    {
       "id": 1,
       "movie_title": "Stuart Little 3: Call of the Wild",
       "movie_genres": "Animation|Children|Comedy|Fantasy",
@@ -479,6 +471,22 @@
       "release_year": 2006,
       "seen": false,
       "img_src": "https://www.elozetes.hu/img2/original/6HrfPZtKcGmX2tUWW3cnciZTaSD.jpg"
+    },
+    {
+      "id": 61,
+      "movie_title": "Hard Rain",
+      "movie_genres": "Action|Crime|Thriller",
+      "release_year": 2003,
+      "seen": false,
+      "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/19703_15.jpg"
+    },
+    {
+      "id": 62,
+      "movie_title": "Indul a Bakterház",
+      "movie_genres": "Comedy",
+      "release_year": 1980,
+      "seen": false,
+      "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/21265_52.jpg"
     }
   ]
 }
