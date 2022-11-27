@@ -21,6 +21,7 @@
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
     "firebase": "^9.14.0",
+    "fontawesome": "^5.6.3",
     "jquery": "^3.6.1",
     "json": "^11.0.0",
     "jsonserver": "^0.1.6",

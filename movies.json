@@ -12,8 +12,8 @@
       "id": 2,
       "movie_title": "Final C",
       "movie_genres": "Action|Drama|Thriller",
-      "release_year": 1990,
-      "seen": false,
+      "release_year": "1990",
+      "seen": "true",
       "img_src": "https://m.media-amazon.com/images/M/MV5BMjkxNjA4NjM0M15BMl5BanBnXkFtZTcwMTU3MDcyMQ@@._V1_.jpg"
     },
     {
@@ -21,7 +21,7 @@
       "movie_title": "Green Zone",
       "movie_genres": "Action|Drama|Thriller|War",
       "release_year": 2006,
-      "seen": true,
+      "seen": "trua",
       "img_src": "https://m.media-amazon.com/images/M/MV5BMTYzMTA1NDMyNV5BMl5BanBnXkFtZTcwMzUwODY5Mg@@._V1_.jpg"
     },
     {
