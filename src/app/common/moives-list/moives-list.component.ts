@@ -11,7 +11,9 @@ import { Movies } from '../movies';
 export class MoivesListComponent implements OnInit {
   @Input() movies: Movies[] = [];
 
-  constructor() {}
+  constructor(
+    private moviesService: MoviesService
+  ) {}
 
   ngOnInit(): void {
 

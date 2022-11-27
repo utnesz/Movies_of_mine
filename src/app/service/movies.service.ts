@@ -8,7 +8,7 @@ import { Movies } from '../common/movies';
   providedIn: 'root',
 })
 export class MoviesService {
-  list: Movies[] = [];
+
 
   apiUrl: string = environment.apiUrl;
 
@@ -28,8 +28,8 @@ export class MoviesService {
   }
 
   update(movie: Movies): Observable<Movies> {
-    let url = `${environment.apiUrl}/${movie.id}`;
-    return this.http.patch<Movies>(url, movie);
+    return this.http.patch<Movies>(
+      `${this.apiUrl}/${movie.id}`, movie);
   }
 
   delete(movie: Movies): Observable<Movies> {

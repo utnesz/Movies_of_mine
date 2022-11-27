@@ -12,6 +12,9 @@ import { MoviesService } from 'src/app/service/movies.service';
   styleUrls: ['./moives-editor.component.scss'],
 })
 export class MoivesEditorComponent implements OnInit {
+
+  movie: Movies = new Movies;
+
   movies$: Observable<Movies> = this.activatedRoute.params.pipe(
     switchMap((params) => this.movieService.get(params['id']))
   );
@@ -22,11 +25,17 @@ export class MoivesEditorComponent implements OnInit {
     private router: Router
   ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+        this.activatedRoute.params.subscribe((params) =>
+          this.movieService.get(params['id']).subscribe((movie) => {
+            this.movie = movie || new Movies();
+          })
+        );
+  }
 
-  onUpdate(movie: any) {
-    this.movieService.update(movie).subscribe((movie) => {
-      this.router.navigate(['/']);
+  onUpdate(moviesForm: NgForm):void {
+    this.movieService.update(moviesForm.value).subscribe((movie) => {
+      this.router.navigate(['/', 'movie']);
     });
   }
 }

@@ -1,13 +1,65 @@
+<div class="container col-12 row mx-auto">
+  <div class="col-sm-6 col-lg-4 mx-auto bg-light m-2 row">
+    <h5 class="m-3 row">Filter by title:</h5>
+    <div class="input-group mb-3 col-6 ml-auto">
+      <input
+        [(ngModel)]="filterPhraseTitle"
+        type="text"
+        class="form-control"
+        placeholder="Serach in Movie Title"
+        aria-label="Serach in Movie Title"
+        aria-describedby="button-addon2"
+      />
+    </div>
+  </div>
 
-<div class="container col-12 mx-auto bg-light m-2 row">
+  <div class="col-sm-6 col-lg-4 mx-auto bg-light m-2 row">
+    <h5 class="m-3 row">Filter by genre:</h5>
+    <div class="input-group mb-3 col-6 ml-auto">
+      <input
+        [(ngModel)]="filterPhraseGenre"
+        type="text"
+        class="form-control"
+        placeholder="Serach in Movie Title"
+        aria-label="Serach in Movie Title"
+        aria-describedby="button-addon2"
+      />
+    </div>
+  </div>
 
-  <h5 class="m-3">Filters:  </h5>
-  <button routerLink="/editor"class="btn btn-success col-6 mx-auto my-2">Add new movie!</button>
+  <div class="col-sm-6 col-lg-4 mx-auto bg-light m-2 row">
+    <h5 class="m-3 row">Filter by release year</h5>
+    <div class="input-group mb-3 col-6 ml-auto">
+      <input
+        [(ngModel)]="filterPhraseYear"
+        type="text"
+        class="form-control"
+        placeholder="Serach in Movie Title"
+        aria-label="Serach in Movie Title"
+        aria-describedby="button-addon2"
+      />
+    </div>
+  </div>
+
+
+<div class="container mx-auto">
+  <button
+    routerLink="/editor"
+    class="btn btn-success col-6 d-flex justify-content-center mx-auto my-2"
+  >
+    Add new movie!
+  </button>
 </div>
 
 <div class="row col-12 d-flex justify-content-evenly bg-light mx-auto">
   <div
-    *ngFor="let movie of movies$ | async"
+    *ngFor="
+      let movie of movies$
+        | async
+        | filter: { movie_title: filterPhraseTitle }
+        | filter: { movie_genres: filterPhraseGenre }
+        | filter: { release_year : filterPhraseYear}
+    "
     class="card col-sm-5 col-lg-3 p-0 border-1 m-2"
     style="width: 18rem"
   >
@@ -17,11 +69,21 @@
       <p class="card-text">{{ movie.movie_genres }}</p>
       <p>Release year: {{ movie.release_year }}</p>
       <h5 *ngIf="movie.seen" class="mr-auto">
-        <span class="badge rounded text-bg-success justify-content-start align-items-end">Seen!</span>
+        <span
+          class="badge rounded text-bg-success justify-content-start align-items-end"
+          >Seen!</span
+        >
       </h5>
       <div class="container d-flex justify-content-end pt-auto px-1">
-        <button [routerLink]="['/editor/' + movie.id]" class="btn btn-warning m-1 mt-auto">Edit</button>
-        <button (click)="onDelete(movie)" class="btn btn-danger m-1 mt-auto">Delete</button>
+        <button
+          [routerLink]="['/editor/' + movie.id]"
+          class="btn btn-warning m-1 mt-auto"
+        >
+          Edit
+        </button>
+        <button (click)="onDelete(movie)" class="btn btn-danger m-1 mt-auto">
+          Delete
+        </button>
       </div>
     </div>
   </div>

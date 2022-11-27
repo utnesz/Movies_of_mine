@@ -10,6 +10,7 @@ import { MoivesListComponent } from './common/moives-list/moives-list.component'
 import { MoivesEditorComponent } from './common/moives-editor/moives-editor.component';
 import { FormsModule } from '@angular/forms';
 import { MovieCardComponent } from './common/movie-card/movie-card.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MovieCardComponent } from './common/movie-card/movie-card.component';
     HomeComponent,
     MoivesListComponent,
     MoivesEditorComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

@@ -9,8 +9,11 @@ import { MoviesService } from 'src/app/service/movies.service';
   styleUrls: ['./movie-card.component.scss'],
 })
 export class MovieCardComponent implements OnInit {
-
   movies$: Observable<Movies[]> = this.moviesService.getAll();
+
+  filterPhraseTitle: string = '';
+  filterPhraseGenre: string = '';
+  filterPhraseYear: string = '';
 
   @Input() movies: Movies[] = [];
 
@@ -18,10 +21,10 @@ export class MovieCardComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  onDelete(movie: Movies):void {
-        this.moviesService
+  onDelete(movie: Movies): void {
+    this.moviesService
       .delete(movie)
       .subscribe((movie) => (this.movies$ = this.moviesService.getAll()));
   }
-  }
+}
 

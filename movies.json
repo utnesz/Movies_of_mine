@@ -25,14 +25,6 @@
       "img_src": "https://m.media-amazon.com/images/M/MV5BMTYzMTA1NDMyNV5BMl5BanBnXkFtZTcwMzUwODY5Mg@@._V1_.jpg"
     },
     {
-      "id": 5,
-      "movie_title": "Babette Goes to War",
-      "movie_genres": "Comedy|War",
-      "release_year": 1984,
-      "seen": false,
-      "img_src": "https://upload.wikimedia.org/wikipedia/en/2/26/Babette-goes-to-war-movie-poster-1960.jpg"
-    },
-    {
       "id": 6,
       "movie_title": "Haunting, The",
       "movie_genres": "Horror|Thriller",
