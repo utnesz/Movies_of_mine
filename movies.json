@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "movie_title": "Nights in Rodanthe",
+      "movie_title": "Nights in Rodanthea",
       "movie_genres": "Drama|Romance",
       "release_year": 2001,
       "seen": false,
@@ -98,7 +98,7 @@
     },
     {
       "id": 13,
-      "movie_title": "Winnie the Pooh",
+      "movie_title": "Micimackó",
       "movie_genres": "Animation|Children|Comedy",
       "release_year": 2010,
       "seen": true,
@@ -485,7 +485,7 @@
       "movie_title": "Indul a Bakterház",
       "movie_genres": "Comedy",
       "release_year": 1980,
-      "seen": false,
+      "seen": "true",
       "img_src": "https://www.mafab.hu/static/profiles/2014/293/04/21265_52.jpg"
     },
     {
@@ -497,10 +497,34 @@
       "img_src": "https://m.media-amazon.com/images/M/MV5BMTQ1ZDZjZTMtOTY5Yy00NTMxLTgwYjEtZmIyOTM5ZjA5YjQ5XkEyXkFqcGdeQXVyMjgxMTkzOQ@@._V1_.jpg"
     },
     {
-      "id": 64,
-      "movie_title": "sdyf",
-      "movie_genres": "asdas",
-      "release_year": "0122",
+      "id": 65,
+      "movie_title": "Sonic the Hedgehog",
+      "movie_genres": "Animation|Action|Comedy",
+      "release_year": "2016",
+      "seen": true,
+      "img_src": "https://upload.wikimedia.org/wikipedia/en/4/45/Sonic_the_Hedgehog_film_poster.jpg"
+    },
+    {
+      "id": 66,
+      "movie_title": "Addams Family",
+      "movie_genres": "Horror|Comedy",
+      "release_year": "2019",
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BYWIxMjI1YjItNDhjYS00Mzc0LWJjMzYtMTgxMjVhZjY3N2QyXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
+    },
+    {
+      "id": 67,
+      "movie_title": "asd",
+      "movie_genres": "asd",
+      "release_year": "1111",
+      "seen": true,
+      "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+    },
+    {
+      "id": 68,
+      "movie_title": "asd",
+      "movie_genres": "asd",
+      "release_year": "3333",
       "seen": true,
       "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
     }

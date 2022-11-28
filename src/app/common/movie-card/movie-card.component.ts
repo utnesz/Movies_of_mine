@@ -19,7 +19,9 @@ export class MovieCardComponent implements OnInit {
 
   @Input() movies: Movies[] = [];
 
-  constructor(private moviesService: MoviesService) {}
+  constructor(
+    private moviesService: MoviesService
+  ) {}
 
   ngOnInit(): void {}
 
