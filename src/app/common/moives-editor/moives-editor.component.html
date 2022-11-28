@@ -1,100 +1,103 @@
-<div class="row">
-  <div class="col-6 offset-3">
+<app-navigation></app-navigation>
+<div class="row body mx-auto pt-5">
+  <div class="col-6 offset-3 mt-5">
     <form #moviesForm="ngForm" (ngSubmit)="onUpdate(movie)">
-      <div class="form-group my-3">
-        <label class="my-2" for="">Movie title:</label>
-        <input
-          name="title"
-          [(ngModel)]="movie.movie_title"
-          type="text"
-          class="form-control"
-          pattern=".{1,40}"
-          required
-        />
-        <div
-          class="error-message text-danger"
-          *ngIf="moviesForm.controls['title']?.invalid"
-        >
-          Movie title is required and must be between 8 and 40 characters!
+      <div class="container row d-felx justify-content-center">
+        <div class="col-6 row d-flex align-items-start">
+          <div class="form-group my-3">
+            <label class="my-2" for="">Movie title:</label>
+            <input
+              name="title"
+              [(ngModel)]="movie.movie_title"
+              type="text"
+              class="form-control"
+              pattern=".{1,40}"
+              required
+            />
+            <div
+              class="error-message text-danger"
+              *ngIf="moviesForm.controls['title']?.invalid"
+            >
+              Movie title is required and must be between 8 and 40 characters!
+            </div>
+          </div>
+
+          <div class="form-group ">
+            <label class="my-2" for="">Movie genres:</label>
+            <input
+              name="genres"
+              [(ngModel)]="movie.movie_genres"
+              type="text"
+              class="form-control"
+              pattern=".{3,}"
+              required
+            />
+          </div>
+          <div
+            [hidden]="moviesForm.controls['genres']?.valid"
+            class="error-message text-danger"
+          >
+            Genres is required and must be minimum 3 characters!
+          </div>
+
+          <div class="form-group my-3">
+            <label class="my-2" for="">Release year:</label>
+            <input
+              name="year"
+              [(ngModel)]="movie.release_year"
+              type="text"
+              class="form-control"
+              pattern="[0-9]{4}"
+              required
+            />
+          </div>
+          <div
+            [hidden]="moviesForm.controls['year']?.valid"
+            class="error-message text-danger"
+          >
+            Release year is required and it has to be 4 numbers.
+          </div>
+        </div>
+        <div class="col-6 row d-flex align-items-start">
+          <div class="form-group my-3">
+            <label class="my-2" for="">Seen</label>
+            <input
+              name="seen"
+              [(ngModel)]="movie.seen"
+              type="text"
+              class="form-control"
+              pattern="^t(?:rue)?|f(?:alse)?"
+              required
+            />
+          </div>
+          <div
+            [hidden]="moviesForm.controls['seen']?.valid"
+            class="error-message text-danger"
+          >
+            Answer is required, it has to be 'true' or 'false'!
+          </div>
+          <div class="form-group">
+            <label class="" for="">Img url:</label>
+            <input
+              name="img url"
+              [(ngModel)]="movie.img_src"
+              type="text"
+              class="form-control"
+              required
+            />
+          </div>
+          <div
+            [hidden]="moviesForm.controls['img url']?.valid"
+            class="error-message text-danger"
+          >
+            Image url is required!
+          </div>
+          <button type="submit" class="col-6 btn btn-primary btn-block btn-lg mt-4 mx-auto">
+            <i class="bi bi-save"></i>
+            Save
+          </button>
         </div>
       </div>
-
-      <div class="form-group my-3">
-        <label class="my-2" for="">Movie genres:</label>
-        <input
-          name="genres"
-          [(ngModel)]="movie.movie_genres"
-          type="text"
-          class="form-control"
-          pattern=".{3,}"
-          required
-        />
-      </div>
-      <div
-        [hidden]="moviesForm.controls['genres']?.valid"
-        class="error-message text-danger"
-      >
-        Genres is required and must be minimum 3 characters!
-      </div>
-
-      <div class="form-group my-3">
-        <label class="my-2" for="">Release year:</label>
-        <input
-          name="year"
-          [(ngModel)]="movie.release_year"
-          type="text"
-          class="form-control"
-          pattern="[0-9]{4}"
-          required
-        />
-      </div>
-      <div
-        [hidden]="moviesForm.controls['year']?.valid"
-        class="error-message text-danger"
-      >
-        Release year is required and it has to be 4 numbers.
-      </div>
-
-      <div class="form-group my-3">
-        <label class="my-2" for="">Seen</label>
-        <input
-          name="seen"
-          [(ngModel)]="movie.seen"
-          type="text"
-          class="form-control"
-          pattern="^t(?:rue)?|f(?:alse)?"
-          required
-        />
-      </div>
-      <div
-        [hidden]="moviesForm.controls['seen']?.valid"
-        class="error-message text-danger"
-      >
-        Answer is required, it has to be 'true' or 'false'!
-      </div>
-      <div class="form-group my-3">
-        <label class="my-2" for="">Img url:</label>
-        <input
-          name="img url"
-          [(ngModel)]="movie.img_src"
-          type="text"
-          class="form-control"
-          required
-        />
-      </div>
-      <div
-        [hidden]="moviesForm.controls['img url']?.valid"
-        class="error-message text-danger"
-      >
-        Image url is required!
-      </div>
-
-      <button
-        type="submit"
-        class="btn btn-primary btn-block btn-lg mt-3"
-      >
-        Save
-      </button>
     </form>
   </div>
 </div>
