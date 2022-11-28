@@ -51,6 +51,9 @@
     Add new movie!
   </button>
 </div>
+<div class="col-12 pt-3 text-center d-flex justify-content-center">
+  <pagination-controls class="text-light"(pageChange)="page = $event"></pagination-controls>
+</div>
 
 <div class="row col-12 d-flex justify-content-evenly bg-black mx-auto">
   <div
@@ -60,8 +63,9 @@
         | filter: { movie_title: filterPhraseTitle }
         | filter: { movie_genres: filterPhraseGenre }
         | filter: { release_year : filterPhraseYear}
+        | paginate: { itemsPerPage: 20, currentPage: page }
     "
-    class="card col-sm-5 col-lg-4 p-0 m-2"
+    class="card col-sm-5 col-lg-4 p-0 m-4"
     style="width: 18rem"
   >
     <img src="{{ movie.img_src }}" class="card-img-top" alt="..." />

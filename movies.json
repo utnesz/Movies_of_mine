@@ -490,10 +490,18 @@
     },
     {
       "id": 63,
-      "movie_title": "asdf",
-      "movie_genres": "sdfg",
-      "release_year": "1222",
-      "seen": "false",
+      "movie_title": "Kopaszkutya",
+      "movie_genres": "Documentary",
+      "release_year": "1980",
+      "seen": true,
+      "img_src": "https://m.media-amazon.com/images/M/MV5BMTQ1ZDZjZTMtOTY5Yy00NTMxLTgwYjEtZmIyOTM5ZjA5YjQ5XkEyXkFqcGdeQXVyMjgxMTkzOQ@@._V1_.jpg"
+    },
+    {
+      "id": 64,
+      "movie_title": "sdyf",
+      "movie_genres": "asdas",
+      "release_year": "0122",
+      "seen": true,
       "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
     }
   ]

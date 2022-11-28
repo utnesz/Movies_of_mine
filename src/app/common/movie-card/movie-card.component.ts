@@ -15,6 +15,8 @@ export class MovieCardComponent implements OnInit {
   filterPhraseGenre: string = '';
   filterPhraseYear: string = '';
 
+  page: number = 1;
+
   @Input() movies: Movies[] = [];
 
   constructor(private moviesService: MoviesService) {}

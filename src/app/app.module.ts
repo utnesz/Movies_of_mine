@@ -11,6 +11,8 @@ import { MoivesEditorComponent } from './common/moives-editor/moives-editor.comp
 import { FormsModule } from '@angular/forms';
 import { MovieCardComponent } from './common/movie-card/movie-card.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
