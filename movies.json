@@ -9,14 +9,6 @@
       "img_src": "https://upload.wikimedia.org/wikipedia/en/4/4c/Stuart_Little_3_Call_of_the_Wild_poster.jpg"
     },
     {
-      "id": 2,
-      "movie_title": "Final Cut, The",
-      "movie_genres": "Action|Drama|Thriller",
-      "release_year": 1990,
-      "seen": false,
-      "img_src": "https://m.media-amazon.com/images/M/MV5BMjkxNjA4NjM0M15BMl5BanBnXkFtZTcwMTU3MDcyMQ@@._V1_.jpg"
-    },
-    {
       "id": 3,
       "movie_title": "Celtic Pride",
       "movie_genres": "Comedy",
@@ -509,7 +501,7 @@
       "movie_title": "Addams Family",
       "movie_genres": "Horror|Comedy",
       "release_year": "2019",
-      "seen": true,
+      "seen": "false",
       "img_src": "https://m.media-amazon.com/images/M/MV5BYWIxMjI1YjItNDhjYS00Mzc0LWJjMzYtMTgxMjVhZjY3N2QyXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_.jpg"
     },
     {
@@ -525,6 +517,14 @@
       "movie_title": "asd",
       "movie_genres": "asd",
       "release_year": "3333",
+      "seen": true,
+      "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
+    },
+    {
+      "id": 69,
+      "movie_title": "Hard Rainasd",
+      "movie_genres": "Comedy",
+      "release_year": "0122",
       "seen": true,
       "img_src": "https://static.vecteezy.com/system/resources/previews/005/337/799/original/icon-image-not-found-free-vector.jpg"
     }
