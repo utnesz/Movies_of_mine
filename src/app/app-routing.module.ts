@@ -16,11 +16,11 @@ const routes: Routes = [
   {
     path: 'editor/:id',
     component: MoivesEditorComponent,
-  }
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

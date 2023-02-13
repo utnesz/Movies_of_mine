@@ -8,8 +8,6 @@ import { Movies } from '../common/movies';
   providedIn: 'root',
 })
 export class MoviesService {
-
-
   apiUrl: string = environment.apiUrl;
 
   constructor(private http: HttpClient) {}
@@ -24,12 +22,11 @@ export class MoviesService {
   }
 
   create(movie: Movies): Observable<Movies> {
-    return this.http.post<Movies>(environment.apiUrl, movie);
+    return this.http.post<Movies>(`${this.apiUrl}`, movie);
   }
 
   update(movie: Movies): Observable<Movies> {
-    return this.http.patch<Movies>(
-      `${this.apiUrl}/${movie.id}`, movie);
+    return this.http.patch<Movies>(`${this.apiUrl}/${movie.id}`, movie);
   }
 
   delete(movie: Movies): Observable<Movies> {
