@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
-import { FormGroup, NgForm } from '@angular/forms';
+import { Observable, of } from 'rxjs';
+import { switchMap } from 'rxjs';
+import { NgForm } from '@angular/forms';
 import { Movies } from '../movies';
 import { MoviesService } from 'src/app/service/movies.service';
 
@@ -11,12 +11,8 @@ import { MoviesService } from 'src/app/service/movies.service';
   templateUrl: './moives-editor.component.html',
   styleUrls: ['./moives-editor.component.scss'],
 })
-export class MoivesEditorComponent implements OnInit {
+export class MoivesEditorComponent {
   movie: Movies = new Movies();
-
-  movies$: Observable<Movies> = this.activatedRoute.params.pipe(
-    switchMap((params) => this.movieService.get(params['id']))
-  );
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -26,33 +22,25 @@ export class MoivesEditorComponent implements OnInit {
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((params) => {
-      if (Number(params['id']) === 0) {
-        this.movie = new Movies();
+      if (params['id'] != 0) {
+        this.movieService
+          .get(params['id'])
+          .subscribe((movie) => (this.movie = movie));
       } else {
-        this.movieService.get(Number(params['id'])).subscribe((movie) => {
-          this.movie = movie;
-        });
+        this.movie = new Movies();
       }
     });
   }
 
-  onUpdate(movie: Movies): void {
-
-      if (!movie.id) {
-        this.movieService.create(movie).subscribe((mov) => {
-          this.router.navigate(['/list']);
-          this.movieService.getAll().subscribe((movie) => {
-            console.log('success');
-          });
-        });
-      } else {
-        this.movieService.update(movie).subscribe((mov) => {
-          this.router.navigate(['/list']);
-          this.movieService.getAll().subscribe((movie) => {
-            console.log('success');
-          });
-        });
-      }
-    };
+  onUpdate(moviesForm: NgForm, movie: Movies): void {
+    if (movie.id === 0) {
+      this.movieService
+        .create(movie)
+        .subscribe((movie) => this.router.navigate(['/list']));
+    } else {
+      this.movieService
+        .update(movie)
+        .subscribe((movie) => this.router.navigate(['/list']));
+    }
   }
-
+}

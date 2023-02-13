@@ -19,16 +19,13 @@ export class MovieCardComponent implements OnInit {
 
   @Input() movies: Movies[] = [];
 
-  constructor(
-    private moviesService: MoviesService
-  ) {}
+  constructor(private moviesService: MoviesService) {}
 
   ngOnInit(): void {}
 
   onDelete(movie: Movies): void {
     this.moviesService
       .delete(movie)
-      .subscribe((movie) => (this.movies$ = this.moviesService.getAll()));
+      .subscribe(() => (this.movies$ = this.moviesService.getAll()));
   }
 }
-

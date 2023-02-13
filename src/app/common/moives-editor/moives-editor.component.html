@@ -1,15 +1,16 @@
-
 <div class="row body mx-auto pt-5">
   <div class="col-8 offset-3 mx-auto">
-    <h2 class="col-10 d-flex justify-content-center text-center pt-5 mx-auto">Movie editor:</h2>
-    <form #moviesForm="ngForm" (ngSubmit)="onUpdate(movie)">
+    <h2 class="col-10 d-flex justify-content-center text-center pt-5 mx-auto">
+      Movie editor:
+    </h2>
+    <form #moviesForm="ngForm" (ngSubmit)="onUpdate(moviesForm, movie)">
       <div class="container row d-felx justify-content-center">
         <div class="col-md-6 row d-flex align-items-start">
           <div class="form-group my-3">
             <label class="my-2" for="">Movie title:</label>
             <input
               name="title"
-              [(ngModel)]="movie.movie_title"
+              [(ngModel)]="movie.title"
               type="text"
               class="form-control"
               pattern=".{1,40}"
@@ -23,11 +24,11 @@
             </div>
           </div>
 
-          <div class="form-group ">
+          <div class="form-group">
             <label class="my-2" for="">Movie genres:</label>
             <input
               name="genres"
-              [(ngModel)]="movie.movie_genres"
+              [(ngModel)]="movie.genre"
               type="text"
               class="form-control"
               pattern=".{3,}"
@@ -42,10 +43,28 @@
           </div>
 
           <div class="form-group my-3">
+            <label class="my-2" for="">Director:</label>
+            <input
+              name="director"
+              [(ngModel)]="movie.director"
+              type="text"
+              class="form-control"
+              pattern=".{1,40}"
+              required
+            />
+            <div
+              class="error-message text-danger"
+              *ngIf="moviesForm.controls['director']?.invalid"
+            >
+              Director is required and must be between 8 and 40 characters!
+            </div>
+          </div>
+
+          <div class="form-group my-3">
             <label class="my-2" for="">Release year:</label>
             <input
               name="year"
-              [(ngModel)]="movie.release_year"
+              [(ngModel)]="movie.releaseYear"
               type="text"
               class="form-control"
               pattern="[0-9]{4}"
@@ -59,12 +78,49 @@
             Release year is required and it has to be 4 numbers.
           </div>
         </div>
+
+        <div class="form-group my-3">
+          <label class="my-2" for="">Poster:</label>
+          <input
+            name="poster"
+            [(ngModel)]="movie.poster"
+            type="text"
+            class="form-control"
+            pattern=".{1,40}"
+            required
+          />
+          <div
+            class="error-message text-danger"
+            *ngIf="moviesForm.controls['poster']?.invalid"
+          >
+            Poster is required and must be between 8 and 40 characters!
+          </div>
+        </div>
+
+        <div class="form-group my-3">
+          <label class="my-2" for="">Studio:</label>
+          <input
+            name="studio"
+            [(ngModel)]="movie.studio"
+            type="text"
+            class="form-control"
+            pattern=".{1,40}"
+            required
+          />
+          <div
+            class="error-message text-danger"
+            *ngIf="moviesForm.controls['studio']?.invalid"
+          >
+            Movie title is required and must be between 8 and 40 characters!
+          </div>
+        </div>
+
         <div class="col-md-6 row d-flex align-items-start">
           <div class="form-group my-3">
             <label class="my-2" for="">Seen</label>
             <input
-              name="seen"
-              [(ngModel)]="movie.seen"
+              name="active"
+              [(ngModel)]="movie.active"
               type="text"
               class="form-control"
               pattern="^t(?:rue)?|f(?:alse)?"
@@ -72,31 +128,30 @@
             />
           </div>
           <div
-            [hidden]="moviesForm.controls['seen']?.valid"
+            [hidden]="moviesForm.controls['active']?.valid"
             class="error-message text-danger"
           >
             Answer is required, it has to be 'true' or 'false'!
           </div>
-          <div class="form-group">
-            <label class="" for="">Img url:</label>
-            <input
-              name="img url"
-              [(ngModel)]="movie.img_src"
-              type="text"
-              class="form-control"
-              required
-            />
-          </div>
-          <div
-            [hidden]="moviesForm.controls['img url']?.valid"
-            class="error-message text-danger"
+
+          <button
+            [disabled]="moviesForm.invalid"
+            type="submit"
+            class="col-6 btn btn-primary btn-block btn-lg mt-4 mx-auto"
           >
-            Image url is required!
-          </div>
-          <button [disabled]="moviesForm.invalid" type="submit" class="col-6 btn btn-primary btn-block btn-lg mt-4 mx-auto">Save
-   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-save" viewBox="0 0 16 16">
-  <path d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"/>
-</svg>
+            Save
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-save"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H9.5a1 1 0 0 0-1 1v7.293l2.646-2.647a.5.5 0 0 1 .708.708l-3.5 3.5a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L7.5 9.293V2a2 2 0 0 1 2-2H14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h2.5a.5.5 0 0 1 0 1H2z"
+              />
+            </svg>
           </button>
         </div>
       </div>
