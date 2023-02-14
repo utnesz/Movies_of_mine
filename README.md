@@ -4,6 +4,8 @@ The purpose of this site is to help you arrange your favourite movies. You can c
 
 The engine of the site is Angular framework which extended by Bootstrap_5.2 for nice and smooth looking design, set of icons came also from Bootstrap.
 
+Backend provoided by: https://nettuts.hu/
+
 
 ![image](https://user-images.githubusercontent.com/90829509/211372734-f8d528dc-c0d5-46bf-843a-853c85547e51.png)
 
